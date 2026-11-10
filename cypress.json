@@ -1,12 +1,12 @@
 {
-    "testFiles": "**/*.feature",
-    "baseUrl": "http://www.lourencodemonaco.com.br/vvtest/",
-    "reporter": "mochawesome",
-    "reporterOptions": {
-        "reportDir": "mochawesome-report",
-        "overwrite": true,
-        "html": false,
-        "json": true,
-        "timestamp": "mmddyyyy_HHMMss"
+  "testFiles": "**/*.feature",
+  "baseUrl": "http://127.0.0.1:8080",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "overwrite": true,
+    "html": false,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
   }
 }
