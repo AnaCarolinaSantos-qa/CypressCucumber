@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "cypress run --headless --browser chrome --no-exit",
+    "test:e2e": "cypress run --headless --browser chrome",
     "test:report": "yarn report:merge & yarn report:generate",
     "report:merge": "mochawesome-merge > mochawesome-report/report.json",
     "report:generate": "marge mochawesome-report//\\report.json"
