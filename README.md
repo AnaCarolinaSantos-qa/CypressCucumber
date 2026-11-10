@@ -1,14 +1,30 @@
 # CypressCucumber
-Projeto criado para testes, onde serão utilizadas as tecnologias cypress + cucumber.
-Automação de um formulário.
 
-# Pré-Requisitos
-- Ter node instalado (https://nodejs.org/pt-br/download/)
+Projeto de automação de um formulário com Cypress e Cucumber. A suíte usa uma página de formulário local para que os testes não dependam de um site externo.
 
-# Configuração e execução do projeto
-- Instale o yarn (ou utilize npm)
-- Instale as dependências do projeto -> yarn install
-- Certifique-se que o projeto tenha as seguintes instalações: cypress e cypress-cucumber-preprocessor
-- Para executar de modo direto, execute o comando "yarn test:e2e" ou abra o cypress através do comando - npx cypress open
+## Pré-requisitos
 
-- Para criar reports de testes realizados, execute: yarn test:report
+- Node.js 20
+- npm
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Executar os testes
+
+Em um terminal, inicie o servidor local do formulário:
+
+```bash
+node cypress/test-server.js
+```
+
+Em outro terminal:
+
+```bash
+npm run test:e2e
+```
+
+A página de teste fica disponível em `http://127.0.0.1:8080/pesquisa/`. O GitHub Actions inicia o mesmo servidor antes de executar a suíte.
