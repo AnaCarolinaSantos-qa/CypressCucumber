@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesquisa de QA</title>
+</head>
+<body>
+  <main>
+    <h1>Pesquisa com o QA</h1>
+    <form id="survey">
+      <label for="nf-field-5">Nome</label><input id="nf-field-5" name="first_name" required>
+      <label for="nf-field-6">Sobrenome</label><input id="nf-field-6" name="last_name" required>
+      <label for="nf-field-7">E-mail</label><input id="nf-field-7" type="email" required>
+      <label for="nf-field-8">Confirme o e-mail</label><input id="nf-field-8" type="email" required>
+      <label for="nf-field-17">Telefone</label><input id="nf-field-17" required>
+      <fieldset class="nf-field-element">
+        <legend>Faixa etária</legend>
+        <label><input type="radio" name="age" value="18-30">18 a 30</label>
+        <label><input type="radio" name="age" value="31-49">31 a 49</label>
+      </fieldset>
+      <label for="nf-field-11">Experiência</label>
+      <select id="nf-field-11">
+        <option value="">Selecione</option>
+        <option value="mais-de-5-anos">Mais de 5 anos</option>
+      </select>
+      <label id="nf-label-class-field-13-4"><input id="nf-field-13" type="checkbox">Automação</label>
+      <label for="nf-field-14">Tecnologias</label><input id="nf-field-14">
+      <label for="nf-field-15">Objetivos</label><textarea id="nf-field-15"></textarea>
+      <button id="nf-field-16" type="submit">Enviar</button>
+    </form>
+    <p class="nf-response-msg" role="status"></p>
+  </main>
+  <script>
+    document.querySelector('#survey').addEventListener('submit', (event) => {
+      event.preventDefault();
+      document.querySelector('.nf-response-msg').textContent = 'Your form has been successfully submitted.';
+    });
+  </script>
+</body>
+</html>
